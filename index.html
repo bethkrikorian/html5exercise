@@ -6,15 +6,20 @@
 		<style>
 			body {
 			background-color: #878787;
+			height: 100%; 
+			width: 100%; 
+			padding: 0; 
 			}
 			header h1 { 
 			text-align: center; 
-     			font-family: sans-serif;
+     			font-family: arial, helvetica;
       			font-size: 30px; 
       			}
       			header { 
 			background-color: #878787;
-      			color: #fff; 
+      			color: #FFF; 
+			width: 100%;
+			padding: 25px 0px; 
       			}
 			nav ul {
 			list-style-type: none;
@@ -33,9 +38,9 @@
 			display: inline;
 			}
 			nav li a {
- 			display: normal;
+			float: left;
   			text-align: center;
-  			padding: 14px 16px;
+  			padding: 15px 15px;
   			text-decoration: none;
 			display: inline-block;
 			}
@@ -43,15 +48,18 @@
 			color: #000; 
 			text-decoration: none; 
 			}
-			h2 {
+			article h2 {
 			text-weight:bold; 
+			font-family: arial, helvetica;
 			text-align:center;
 			font-size: 30px;
 			}
-			h3, h4 {
+			article h3, h4 {
 			text-weight:bold; 
 			font-size: 28px; 
 			margin-left: 10px;
+			text-align: left; 
+			font-family: arial, helvetica;
 			}
 			h5 {
 			text-decoration: none; 
@@ -82,16 +90,16 @@
 			}
 			footer {
 			font-size: 10px; 
-			font-family: sans-serif;
+			font-family: arial, helvetica;
 			position: absolute;
 			width: 100%; 
 			bottom: 0;
+			float: left;
 			background-color: #FFF;
-			padding: 25px;
-    			border: 25px; 
+			padding: 20px;
+    			border: 20px; 
 			border-color: #FFF; 
-    			margin: 0px;
-			margin-left: 0px; 
+			margin-left: 0; 
 			}
 		</style>
 	</head>
@@ -101,48 +109,62 @@
 		</header>
 		<nav>
 			<ul>
-				<li><a href=“#”>HOME</a></li> 
-				<li><a href=“#”>OUR TEAM</a></li>
-				<li><a href=“#”>PROJECTS</a></li>
-				<li><a href=“#”>CONTACT</a></li>
+				<li><a href=“#”> HOME </a></li> 
+				<li><a href=“#”> OUR TEAM </a></li>
+				<li><a href=“#”> PROJECTS </a></li>
+				<li><a href=“#”> CONTACT </a></li>
         			<li>
         			<form>
-        			<input type=‘text’ name=‘search’>
-        			<input type = ‘submit’ value = “Search”>
+        			<input type=‘text’ name=‘search’ value='Search query'>
+        			<div style="display: inline, background-color: #000; color: #FFF;>
+				<button type="submit"; class="btn";> Go! </button>
+				</div> </li>
         			</form>
 			</ul>
 		</nav>
+		<div class = "container">
+		<div class = "article">
 		<article>
-			<section> 
-				<h2><i>Article heading</i></h2>
-				<p>Lorem ipsum dolor sit smet, consectetur adipisicing elit. Domec a diam lectus. Set sit amet ipsum mauris.
+			<h2><i>Article heading</i></h2>
+				<section> 
+					<p>Lorem ipsum dolor sit smet, consectetur adipisicing elit. Domec a diam lectus. Set sit amet ipsum mauris.
 					Maecenas conguq ligula as quam<br> vivera nec consectetur ant henderit. Donec et mollis dolor. Praesent
 					et diam egget libero egestas mattis sit amet vitae augue. Nam tincidunt<br> congue enim, ut porta 
 					lorem lacinia consectetur.</p>
-				<h3><i>Subsection</i></h3>
-				<p>Donec ut librero sed accu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipisicing 
+				</section>
+			<h3><i>Subsection</i></h3>
+				<section>
+					<p>Donec ut librero sed accu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipisicing 
 					elit. Aenean ut gravida lorem.<br> Ut turpis felis, pulvinar a semper sed, adipisicing id dolor.</p>
-				<p>Pelientesque auctor nisi id magna consequat sagatis. Curabitur dapibus, enim sit amet elit phantera tincidunt 
+					<p>Pelientesque auctor nisi id magna consequat sagatis. Curabitur dapibus, enim sit amet elit phantera tincidunt 
 					feugiat nist imperdiet. Ut convallis<br> libero in urna ultrices accumsan. Donec sed odio eros.</p>
-				<h4><i>Another subsection</i></h4>
-				<p>Donec viverra mis quis quam pulvinar at malesuada arcu rhoncus. Cum soclis natoque penatibus et manis dis 
+				 </section>
+			<h4><i>Another subsection</i></h4>
+				<section>
+					<p>Donec viverra mis quis quam pulvinar at malesuada arcu rhoncus. Cum soclis natoque penatibus et manis dis 
 					parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem 
 					facilisis semper ac in est.</p>
-				<p>Vivamus fermentum semper porta. Nunc diam velit, adipscing ut tristique vitae sagittis vel odio. Maecenas 
+					<p>Vivamus fermentum semper porta. Nunc diam velit, adipscing ut tristique vitae sagittis vel odio. Maecenas 
 					convallis ullamcorper ultricied.<br> Curabitur ornare, ligular semper consectetur sagittis, nisi diam iaculis
 					velit, is fringille sem nunc vet mi.</p>
-			</section> 
+				</section> 
 		</article>
+		</div>
+		<div class = "aside">
 		<aside>
 			<h5><i>&nbsp&nbsp&nbspRelated</i></h5>
 			<ul>
-				<li><a href=“#”>Oh I do like to be beside the<br> seaside</a></li> 
+				<li><a href=“#”>Oh I do like to be beside the<br> seaside</a></li>
 				<li><a href=“#”>Oh I do like to be beside the<br> sea</a></li>
 				<li><a href=“#”>Although in the North of<br> England</a></li>
 				<li><a href=“#”>It never stops raining</a></li>
 				<li><a href=“#”>Oh well...</a></li>
 			</ul>
 		</aside>
-		<footer>©Copyright 2050 by nobody. All rights reserved. </footer>
+		</div>
+		</div>
+		<footer>
+			©Copyright 2050 by nobody. All rights reserved. 
+		</footer>
 	</body>
 </html>

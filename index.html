@@ -4,6 +4,38 @@
 		<meta charset=“utf-8”>
 		<title>HTML 5 Doc</title>
 		<style>
+			.container {
+			width: 100%; 
+			display: flex; 
+			align-items: stretch; 
+			justify-content: flex-start;
+			flex-direction: row;
+			}
+			.aside {
+			background-color: #FF1493;
+			font-family: arial, helvetica;
+			font-size: 15px; 
+			width: 30%; 
+			margin: 1%; 
+			box-size: border-box;
+			order: 1; 
+			}
+			.article {
+			background-color: #FFF; 
+			color: #000; 
+			font-family: arial, helvetica;
+			font-size: 20px; 
+			width: 68%; 
+			margin: 1%; 
+			box-size: border-box;
+			order: -1; 
+			}
+			.btn {
+			background-color: #000; 
+			color: #FFF; 
+			padding: 0px 10px; 
+			border: none; 
+			}
 			body {
 			background-color: #878787;
 			height: 100%; 
@@ -20,6 +52,7 @@
       			color: #FFF; 
 			width: 100%;
 			padding: 25px 0px; 
+			box-side: border-box;
       			}
 			nav ul {
 			list-style-type: none;
